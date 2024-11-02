@@ -40,8 +40,8 @@ export const products = [{
   pricecent: 25080
 },{
   id: '791-80-forthimg-40',
-  image: 'image/Crystal Diamond.jpeg',
-  name: 'Crystal Diamond',
+  image: 'image/21 Set Piece Diamond.jpeg',
+  name: '21 Set piece Diamond',
   rating: {
     stars: 5,
     count: 90
@@ -58,7 +58,7 @@ export const products = [{
   pricecent: 9000010
 },{
   id: '246-13-sixthtimg-62',
-  image: 'image/The White Crystal Diamond.jpg',
+  image: 'image/The white crystal diamond.jpg',
   name: 'The White Crystal Diamond',
   rating: {
     stars: 4.5,
