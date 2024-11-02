@@ -57,6 +57,7 @@ body{
 }
 
 .cart-cart{
+  height: 100px
   padding: 5px;
   border-width: 1px;
   border-style: ridge;
