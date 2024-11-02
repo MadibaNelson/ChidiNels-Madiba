@@ -40,7 +40,7 @@ export const products = [{
   pricecent: 25080
 },{
   id: '791-80-forthimg-40',
-  image: 'image/21 Set piece Diamond.jpeg',
+  image: 'image/Crystal Diamond.jpeg',
   name: '21 Set piece Diamond',
   rating: {
     stars: 5,
