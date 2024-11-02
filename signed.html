@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elson shopping</title>
+    <!--this code is needed for rsponsive design to work, which means that it makes the page look good in a smaller gadgets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--this code is for linking the stylesheets for the page-->
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/menu-bar.css">
+  </head>
+  <body>
+    <div class="sign-in-header">
+
+      <div class="left-header">
+        <button class="menu-button js-menu-button">
+          <img class="menu-icon" src="image/hamburger-menu.png">
+          <div class="hint">Menu</div>
+        </button>
+        <div class="logo-img">
+          ElSoN
+        </div>
+      </div>
+
+      <div class="middile-header">
+        <input class="input-button" placeholder="Search">
+        <button class="search-icon">
+          <img class="search-img" src="image/search.svg">
+          <div class="hint">Search</div>
+        </button>
+      </div>  
+
+      <div class="sign-in-right-header">
+        <a href="return-order.html">
+          <div class="return-text">
+            <div>Returns</div>
+            <div style="font-weight: bold;">& Orders</div>
+            <div></div>
+            <div class="hint">Returns & Orders</div>
+          </div>
+        </a>
+        <a href="checkout.html">
+          <div class="cart">
+            <div class="inner-cart">
+              <div class="cart-num js-cart-num">0</div>
+              <img class="cart-img" src="image/cart-icon.png">
+            </div>
+            <div class="cart-text">Cart</div>
+            <div class="hint">Cart</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="js-menu-bar"></div>
+    <div class="products-container js-products-container">
+    </div>
+    <!--it makes this script a module type, which mean the source file-->
+    <script type="module" src="JS Page/project.js"></script>
+  </body>
+</html>

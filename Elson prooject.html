@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Madiba's Project</title>
+    <!--this code is needed for rsponsive design to work, which means that it makes the page look good in a smaller gadgets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--this code is for linking the stylesheet for the page-->
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/header.css">
+  </head>
+  <body>
+    <div class="main-header">
+
+      <div class="left-header">
+        <div class="logo-img">
+          ElSoN
+        </div>
+      </div>
+
+      <div class="middile-header">
+        <input class="input-button" placeholder="Search">
+        <button class="search-icon">
+          <img class="search-img" src="image/search.svg">
+          <div class="hint">Search</div>
+        </button>
+        <button class="search-voice">
+          <img class="search-img" src="image/voice-search-icon.svg">
+          <div class="hint">voice search</div>
+        </button>
+      </div>  
+
+      <div class="right-header">
+        <a href="mail.html">
+          <button class="sign-in-button">Sign in
+            <div class="hint">sign-in</div>
+          </button>
+        </a>
+        
+      </div>
+    </div>
+    <div class="contaikner">
+      <div class="menu-sections"></div>
+      <div class="products-container js-products-container">
+      </div>
+    </div>
+    <script>
+      const products = [{
+        id: '791-80-forthimg-40',
+        image: 'image/21 Set piece Diamond.jpeg',
+        name: '21 Set piece Diamond',
+        rating: {
+          stars: 5,
+          count: 90
+        },
+        pricecent: 2200000
+      },{
+        id: '913-02-fifthimg-56',
+        image: 'image/Fine Gold Net WT 1000g.jpeg',
+        name: 'Fine Gold Net WT 1000g',
+        rating: {
+          stars: 3,
+          count: 29
+        },
+        pricecent: 9000010
+      },{
+        id: '246-13-sixthtimg-62',
+        image: 'image/The White Crystal Diamond.jpg',
+        name: 'The White Crystal Diamond',
+        rating: {
+          stars: 4.5,
+          count: 80
+        },
+        pricecent: 30000
+      },{
+        id: '468-35-seventthimg-74',
+        image: 'image/The Hour-Glass Diamond Gold Pin.jpeg',
+        name: 'The Hour-Glass Diamond Gold Pin',
+        rating: {
+          stars: 3.5,
+          count: 79
+        },
+        pricecent: 50004
+      },{
+        id: '680-57-eightimg-86',
+        image: 'image/Liberian Gold Diamond.jpeg',
+        name: 'Liberian Gold Diamond',
+        rating: {
+          stars: 4.5,
+          count: 70
+        },
+        pricecent: 90440
+      },{
+        id: '086-79-ninthimg-98',
+        image: 'image/Mined Diamond Neckles.jpeg',
+        name: 'Mined Diamond Neckles',
+        rating: {
+          stars: 3,
+          count: 73
+        },
+        pricecent: 70220
+      },{
+        id: '864-91-imgtrnth-001',
+        image: 'image/Neckles Scottish Diamond.jpeg',
+        name: 'Neckles Scottish Diamond',
+        rating: {
+          stars: 4.5,
+          count: 44
+        },
+        pricecent: 63400
+      },{
+        id: '113-19-11thingimg-101',
+        image: 'image/Resolution 12piece Gold Watch.jpeg',
+        name: 'Resolution 12piece Gold Watch',
+        rating: {
+          stars: 2.5,
+          count: 7
+        },
+        pricecent: 85020
+      },{
+        id: '331-132-imgtwelveth-120',
+        image: 'image/Brilliance Fine Jewelry CaratDiamond Yellow-Gold.jpeg',
+        name: 'Brilliance Fine Jewelry Carat Diamond Yellow Gold',
+        rating: {
+          stars: 4.5,
+          count: 22
+        },
+        pricecent: 77240
+      },{
+        id: '551-654-fitingimg-0005',
+        image: 'image/Black Ring Diamond.jpeg',
+        name: 'Black Ring Diamond',
+        rating: {
+          stars: 4,
+          count: 44
+        },
+        pricecent: 100000
+      },{
+        id: '2234-0012-makllin-5640',
+        image: 'image/Crystal Carat Ring.jpeg',
+        name: 'Crystal Carat Ring',
+        rating: {
+          stars: 5,
+          count: 801
+        },
+        pricecent: 66600
+      }];
+
+      let productsHtml = '';
+
+      products.forEach((product) => {
+        productsHtml += `
+        <div class="products">
+          <img class="products-img" src="${product.image}">
+          <div class="product-texts">
+            <div class="product-name">
+            ${product.name} 
+            </div>
+            <div class="product-rating">
+              <img class="star-img" src="image/${((product.rating.stars)*10)+'.png'}">
+              <div class="product-count">
+                ${product.rating.count}
+              </div>
+            </div>
+            
+            <div class="product-price">
+              $${(product.pricecent / 100).toFixed(2)}
+            </div>
+            <div class="select-sec">
+              <select class="js-selector-${product.id}">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+              <div class="favorites"><img class="fav-img" src="image/Fav image.png"></div>
+            </div>
+          </div>
+          <div class="inter-button">
+            <a href="mail.html">
+              <button class="add-button js-add-to-cart" data-product-id="${product.id}">
+              <div class="js-added-${product.id}"></div>
+              Add to Cart
+              </button>
+            </a>
+          </div>
+        </div>`;
+      })
+      document.querySelector('.js-products-container').innerHTML = productsHtml
+    </script>
+  </body>
+</html>

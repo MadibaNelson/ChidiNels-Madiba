@@ -1,0 +1,130 @@
+body{
+  padding-top: 51px;
+  font-family: times new roman;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 590px) {.products-container{grid-template-columns: 1fr 1fr;}}
+
+@media (min-width: 591px) and (max-width: 845px){
+  .products-container{grid-template-columns: 1fr 1fr 1fr}
+}
+@media (min-width: 850px) and (max-width: 990px){
+  .products-container{grid-template-columns: 1fr 1fr 1fr 1fr}
+}
+
+@media (min-width: 1100px) {.products-container{grid-template-columns: 1fr 1fr 1fr 1fr 1fr}}
+
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: rgb(211, 207, 207);
+  padding-top: 30px;
+  padding-left: 5px;
+}
+
+.products-img{
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.product-texts{
+  flex: 1;
+  display: grid;
+  row-gap: 7px;
+}
+
+.product-name{
+  font-family: arial;
+  font-size: 15px;
+  font-style: italic;
+  width: 200px;
+}
+
+.star-img{
+  width: 70px;
+  object-fit: contain;
+}
+
+.product-rating{
+  display: grid;
+  grid-template-columns: 70px 70px;
+  align-content: center;
+  column-gap: 5px;
+}
+
+.product-count{
+  font-size: 14px;
+  margin-top: 2px;
+  color: rgb(38, 161, 177);
+}
+
+.product-price{
+  font-weight: bolder;
+}
+
+.favorites{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fav-img{
+  width: 20px;
+  object-fit: contain;
+  margin-bottom: -5px;
+  background-color: white;
+}
+
+.inter-button{
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.added-display{
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  color: rgb(208, 255, 0);
+  margin-bottom: 3px;
+  cursor: default;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+}
+
+.add-button{
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(212, 212, 24);
+  padding: 3px;
+  width: 100px;
+  cursor: pointer; 
+  flex: 1fr;
+  position: relative;
+}
+
+.add-button:hover{
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-button:active{
+  background-color: rgb(231, 231, 12);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  
+}

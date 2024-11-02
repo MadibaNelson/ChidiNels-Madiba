@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  padding-left: 15px;
+}
+
+h1{text-align: center;}
+
+.playbuttons{
+  background-color: black;
+  height: 90px;
+  width: 90px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 45px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-right:10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.computer-playbutton{
+  margin-left: 50px;
+}
+
+.playbutton{
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.playbuttons:hover{border-color: wheat;}
+.playbuttons:active{border-color: black;}
+
+.playbuttons:hover .hint{
+  opacity: 1;
+   
+}
+
+.hint{
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: -25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s; 
+}
+
+.conf-button{
+  margin-top: 10px;
+}
+
+.yes-b, .no-b{
+  font-weight: bold;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button, .auto-play-button{
+  font-size: 15px;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.js-moves{
+  font-size: 14px;
+}
