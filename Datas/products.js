@@ -41,7 +41,7 @@ export const products = [{
 },{
   id: '791-80-forthimg-40',
   image: 'image/Crystal Diamond.jpeg',
-  name: '21 Set piece Diamond',
+  name: 'Crystal Diamond',
   rating: {
     stars: 5,
     count: 90
