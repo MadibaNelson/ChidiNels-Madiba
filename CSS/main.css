@@ -6,6 +6,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menu-button{
@@ -38,8 +40,6 @@ body{
   right: 0px;
   text-wrap: nowrap;
   color: rgb(33, 175, 52);
-  margin: 0px;
-  font-size: 40px
 }
 
 .upper-img{  
@@ -60,22 +60,17 @@ body{
 
 .first-sub-div{
   flex: 1;
-  position: relative;
 }
 
 .h2{
-  position: absolute;
-  top: -30px;
+
   color: rgb(232, 164, 96);
-  right: 0px;
-  left: 0px;
   text-align: center;
   font-size: 50px;
 }
 
 .first-img{
   object-fit: contain;
-  margin-top: 30px;
   width: 100%;
 }
 
@@ -122,10 +117,6 @@ body{
   to{transform: translate(500px);}
 }
 
-span{
-  color: red;
-}
-
 .join-button{
   width: 100px;
   padding: 10px 0px;
@@ -155,9 +146,6 @@ span{
   padding: 10px 0px;
   height: 150px;
   margin-top: 30PX;
-  position: relative;
-  left: 0;
-  right: 0;
 }
 
 .ul-div{
