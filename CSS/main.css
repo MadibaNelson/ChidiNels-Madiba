@@ -2,6 +2,9 @@ body{
   margin: 0px;
   text-wrap: nowrap;
 }
+.container{
+  align-items: center;
+}
 
 .menu-button{
   position: fixed;
@@ -195,7 +198,4 @@ u:hover{
   border-top-style: ridge;
   border-top-color: gray;
   padding: 10px;
-  position: relative;
-  left: 0;
-  right: 0;
 }
