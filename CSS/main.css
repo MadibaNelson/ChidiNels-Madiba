@@ -1,0 +1,190 @@
+body{
+  margin: 0px;
+  text-wrap: nowrap;
+}
+
+.menu-button{
+  position: fixed;
+  top: 7px;
+  left: 7px;
+  background-color: black;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-button:hover{
+  width: 20px;
+}
+
+.upper-display{
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: ridge;
+  border-bottom-color: gray;
+  position: relative;
+}
+
+h1{
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(17, 110, 26, 0.5);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  font-size: 33px;
+  text-wrap: nowrap;
+  color: rgb(33, 175, 52);
+}
+
+.upper-img{
+  position: relative;
+  top: 5px;
+  left: 0px;
+  right: 0px;
+  align-items: center;
+  height: 150px;
+}
+
+.first-div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.first-sub-div{
+  flex: 1;
+  position: relative;
+}
+
+h2{
+  position: absolute;
+  top: -30px;
+  color: rgb(232, 164, 96);
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.first-img{
+  object-fit: contain;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.text-div{
+  flex: 1;
+  margin-top: 10px;
+}
+
+.sing-div{
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  font-size: 30px;
+  color: rgb(62, 89, 89);
+  font-weight: bolder;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.sing-dive{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  font-size: 30px;
+  color: red;
+  font-weight: bolder;
+  animation-name: come;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move{
+  from{transform: translate(-800px)}
+  to{transform: translate(500px);}
+}
+
+@keyframes come{
+  from{transform: translate(1400px)}
+  to{transform: translate(500px);}
+}
+
+span{
+  color: red;
+}
+
+.join-button{
+  width: 100px;
+  padding: 10px 0px;
+  margin-top: 20px;
+  background-color: rgb(70, 70, 211);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.join-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.join-button:active{
+  background-color: wheat;
+  color: blue;
+}
+
+.text-area{
+  background-color: black;
+  color: greenyellow;
+  padding: 10px 0px;
+  height: 150px;
+  margin-top: 30PX;
+}
+
+.ul-div{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  margin-left: 10px;
+  row-gap: 10px;
+  width: 120px;
+}
+
+li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+u{
+  cursor: pointer;
+  color: rgb(142, 184, 198);
+}
+
+u:hover{
+  color: rgb(78, 123, 137);
+}
+
+.footer-bar{
+  background-color: black;
+  height: 50px;
+  color: rgb(80, 142, 144);
+  text-align: center;
+  border-top-width: 1px;
+  border-top-style: ridge;
+  border-top-color: gray;
+  padding: 10px;
+}

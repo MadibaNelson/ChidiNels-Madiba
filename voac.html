@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Of Angels Choir</title>
+  <link rel="stylesheet" href="CSS/voac.css">
+</head>
+<body>
+  <div class="sign-in-container">
+    <img src="img/IMG-20240704-WA0017.jpg" class="sign-in-img">
+
+    <div class="sign-in-div">
+
+      <div >
+        <input class="input-bar js-input-bar" placeholder="Your Surename" type="text">
+      </div>
+      <div class="error-message"></div>
+      <div class="button-div">
+        <a>
+          <button class="sign-in-button">
+            Sign In
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputBar = document.querySelector('.js-input-bar')
+    const names = ['JIDEOFOR8', 'ALUM4', 'EZE3', 'ELOBUIKE8', 'UGWU4', 'ODINWAMKPA10', 'OGBU4', 'OBIORA6', 'OKAFOR6'];
+
+    const a = document.querySelector('a');
+
+    names.forEach(myname =>{
+      const name = myname;
+
+      document.querySelector('.sign-in-button').addEventListener('click', () =>{
+        if(inputBar.value === name){
+          a.setAttribute('href', 'main.html');
+        } else{
+          document.querySelector('.error-message').innerHTML = 'Name Not In The Server';
+          setTimeout(() =>{
+            document.querySelector('.error-message').innerHTML = '';
+          }, 2000);
+        }
+      });
+    });
+
+    addEventListener('keydown', (event)=>{
+      if(event.key === 'Enter'){
+        names.forEach(myname =>{
+          if(inputBar.value === myname){
+            a.setAttribute('href', 'main.html');
+            console.log(myname);
+          } else{
+            document.querySelector('.error-message').innerHTML = 'Name Not In The Server';
+            setTimeout(() =>{
+              document.querySelector('.error-message').innerHTML = '';
+            }, 2000);
+          }
+        })
+      }
+    })
+    
+  </script>
+</body>
+</html>
