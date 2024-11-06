@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.sign-in-img{
+  width: 450px;
+}
+
 .sign-in-div{
   display: grid;
   justify-content: center;
