@@ -1,0 +1,60 @@
+.form-container{
+  position: relative;
+}
+
+.form-container img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.form-div{
+  background-color: transparent;
+  position: absolute;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.title{
+  font-size: 30px;
+  flex: 1;
+  color: rgb(195, 147, 25);
+  font-weight: bold;
+}
+
+.name-div{
+  flex: 1;
+  padding: 10px 0px;
+}
+
+.name-div input{
+  flex: 1;
+  width: 1;
+  border-radius: 15px;
+  height: 25px;
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+.occu-div, .age-div{
+  color: rgb(195, 147, 25);
+  height: 30px;
+  font-size: 20px;
+}
+
+.sub-button{
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+
+.sub-button:hover{
+  box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.5);
+  color: rgb(195, 147, 25);
+}
