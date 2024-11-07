@@ -14,13 +14,10 @@
       </div>
     </div>
     <div class="menu-button">
-      <img src="img/hamburger-menu.png">
-      <div class="text-area">
-        <a href="choir-events.html">Choir Events</a>
-        <a href="choir-exe.html">Choir Executives</a>
-        <a href="choir-mem.html">Members</a>
-        <a href="about-choir.html">About</a>
+      <div class="js-menu-button">
+        <img src="img/hamburger-menu.png">
       </div>
+      <div class="text-bar js-text-area"></div>
     </div>
      
     <div class="div-one">
@@ -79,5 +76,28 @@
   <footer class="footer-bar">
     Copywrite 2024@Powered by VOAC
   </footer>
+
+  <script>
+    const menuBar = document.querySelector('.js-menu-button');
+    const menuText = document.querySelector('.js-text-area');
+
+    let menus = false;
+    menuBar.addEventListener('click', ()=>{
+      if(!menus){
+        menuText.innerHTML = `
+          <div class="text-area">
+            <a href="choir-events.html">Choir Events</a>
+            <a href="choir-exe.html">Choir Executives</a>
+            <a href="choir-mem.html">Members</a>
+            <a href="about-choir.html">About</a>
+          </div>
+        `;
+        menus = true;
+      }else if(menus === true){
+        menuText.innerHTML = '';
+        menus = false;
+      }
+    })
+  </script>
 </body>
 </html>
