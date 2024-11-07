@@ -1,34 +1,32 @@
-.sign-in-container{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color:rgb(62, 89, 89);
-  display: grid;
-  justify-content: center;
+body{
+  margin: 0px;
 }
 
-.sign-in-img{
-  width: 450px;
+.sign-in-container{
+  margin: 8px;
+  border: 1px solid gray;
+  background-color: rgb(62, 89, 89);
+}
+
+.sign-in-container img{
+  width: 100%;
+  object-fit: contain;
 }
 
 .sign-in-div{
-  display: grid;
-  justify-content: center;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  row-gap: 10px;
 }
 
-.input-bar{
-  height: 25px;
-  width: 300px;
-  font-size: 14px;
-  padding: 0px 5px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: gray;
-  border-radius: 3px;
-}
-
-.input-bar::placeholder{
-  font-size: 14px;
+.sign-in-div input{
+  width: 270px;
+  height: 20px;
+  border: 1px solid gray;
+  padding: 3px;
+  font-size: 20px;
 }
 
 .error-message{
@@ -37,9 +35,8 @@
 }
 
 .sign-in-button{
+  margin-bottom: 10px;
   width: 100px;
-  margin-left: 105px;
-  margin-top: 10px;
   padding: 10px 3px;
   border-radius: 10px;
   border-style: solid;
