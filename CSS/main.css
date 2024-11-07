@@ -21,7 +21,7 @@ body{
   color: rgb(65, 166, 65);
   text-shadow: 3px 3px 3px rgba(37, 128, 38, 0.5);
   text-align: center;  
-
+  margin-top: 8px;
 }
 
 .header-display-img img{
@@ -57,6 +57,7 @@ img:hover{height: 13px;}
   justify-content: space-between; 
   cursor: pointer;
   padding: 0px 5px;
+  white-space: nowrap;
 }
 
 li:hover{color: white; text-decoration: underline;}
