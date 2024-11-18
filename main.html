@@ -46,9 +46,7 @@
       </div>
     </div>
   
-    <div class="sing-div">
-      Sing Praises: <span class="sing-dive">To The Lord!!</span>
-    </div>
+    <div class="sing-div"></div>
   
     <div class="div-three">
       <div class="vid-div">
@@ -100,6 +98,17 @@
         menus = false;
       }
     })
+
+    setInterval(()=>{
+      document.querySelector('.sing-div')
+        .innerHTML = `<span class="sing-dive">Sing Praises...</span>`;
+    }, 2000);
+
+    setInterval(()=>{
+      document.querySelector('.sing-div')
+        .innerHTML = `<span class="to-dive">To The Lord!!</span>`;
+    }, 3000)
+
   </script>
 </body>
 </html>

@@ -40,6 +40,7 @@
 }
 
 .occu-div, .age-div{
+  margin-top: 5px;
   color: rgb(195, 147, 25);
   height: 30px;
   font-size: 20px;
@@ -48,6 +49,7 @@
 .sub-button{
   height: 40px;
   width: 100px;
+  margin-top: 10px;
   border-radius: 20px;
   border: 1px solid gray;
   cursor: pointer;
